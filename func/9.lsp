@@ -1,0 +1,27 @@
+(defun fibonacci ()
+  (let 
+    ((cur 0) (next 1))
+    (lambda ()
+      (let
+        ((sum (+ cur next)) (to_print cur))
+        (setq cur next)
+        (setq next sum)
+        to_print
+      )
+    )
+  )
+)
+
+(setq gen (fibonacci))
+(print (funcall gen))
+(print (funcall gen))
+(print (funcall gen))
+(print (funcall gen))
+(print (funcall gen))
+(print (funcall gen))
+(print (funcall gen))
+(print (funcall gen))
+(print (funcall gen))
+(print (funcall gen))
+(print (funcall gen))
+(print (funcall gen))
